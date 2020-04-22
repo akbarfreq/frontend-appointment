@@ -10,7 +10,7 @@ const BASE_DOMAIN = EnvironmentVariableGetter.REACT_APP_MODULE_CODE
     : ''
 //const APP_PORT = process.env.PORT || ''
 let Axios = axios.create({
-    baseURL: SERVER_DOMAIN + BASE_DOMAIN,
+    baseURL: SERVER_DOMAIN, //+ BASE_DOMAIN,
     proxy: {
         host: 'localhost',
         port: 3301

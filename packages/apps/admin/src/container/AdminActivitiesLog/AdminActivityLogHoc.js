@@ -40,7 +40,6 @@ const AdminActivityLogHOC = (ComposedComponent, props, type) => {
         hospitalId: '',
         parentId: '',
         roleId: '',
-        userName: '',
         adminMetaInfoId: ''
       },
       queryParams: {
@@ -85,13 +84,11 @@ const AdminActivityLogHOC = (ComposedComponent, props, type) => {
         parentId,
         roleId,
         toDate,
-        userName,
         adminMetaInfoId
       } = this.state.searchParameters
       let searchData = {
         fromDate,
         toDate,
-        userName,
         hospitalId: hospitalId.value || '',
         parentId: parentId.value || '',
         roleId: roleId.value || '',
@@ -198,7 +195,6 @@ const AdminActivityLogHOC = (ComposedComponent, props, type) => {
           hospitalId: '',
           parentId: '',
           roleId: '',
-          userName: '',
           adminMetaInfoId: ''
         }
       })
